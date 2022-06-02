@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.logo{
+    font-size:45px;
+    width: 80px;
+    cursor: pointer;
+    color: white;
+    margin-left: 30px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 40px;
+    font-size: 14px;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: coral;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+nav ul li:hover:after{
+    width: 100%;
+}
+
+.main{
+    width: 100vw;
+    height: 130vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/bg.jpg);
+    background-position: bottom;
+    background-size:cover;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    
+}
+.main-text{
+    margin-bottom: 310px;
+    color: white;
+    text-align: center;
+
+}
+.Heading{
+    font-size: 12vmin;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+.line{
+    width: 300px;
+    height: 3px;
+    background: coral;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+ p{
+        margin: 20px auto; 
+        font-weight: 100;
+       line-height:25px;
+    
+}
+button{
+    width: 180px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 10px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    color:white ;
+    background-color: coral;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover{
+    color:coral ;
+    background-color: white;
+    
+
+}
+button::after{
+    color:coral ;
+    background-color: white;
+    opacity: 0.8;
+}
+
+/*---------mb view---------*/
+
+
+/*-----------section2-------------*/
+
+.container{
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}
+span{
+    color: rgb(223, 106, 64);
+    font-weight: bold;
+}
+
+.title{
+    text-align: centre;
+    font-size: 6vmin;
+}
+
+/*------------section3 grid----------------*/
+
+
+
